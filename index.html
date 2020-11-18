@@ -8,6 +8,17 @@
     </head>
 
     <body id="Body">
+        <div id="alert">
+            <input type="image" id="close" src="img/close.png" />
+            <h1>界面名称</h1>
+            <div id="alert_h2">简单的提示的提示文字</div>
+            <div class="input_container" id="alert_container1">
+                <label for="alert_input1" id="label1">标题</label>
+                <input class="alert_input" type="text" id="alert_input1">
+                <p class="input_attention"></p>
+            </div>
+            <input type="button" id="submit"/> 
+        </div>
         <div class="page" id="index">
             <image id="h1" src="img/title.png" />
             <!--搜索框-->
@@ -42,8 +53,8 @@
             <!--查询结果-->
         </div>
         <div class="sidebar" id="sidebar">
-        <image src="img/user.png" id="user">
-        <image src="img/home.png" id="home">
+            <image src="img/user.png" id="user">
+                <image src="img/home.png" id="home">
         </div>
         <image src="img/h2_search.png" id="h2_search" />
         <div class="show" id="show_search">
@@ -68,7 +79,9 @@
                     <li class="info">这是这本书的作者</li>
             </div>
         </div>
-        <div class="show"></div>
+        <div class="show" id="show_user"></div>
+        <div class="show" id="show_info"></div>
+        <div class="show" id="show_manager"></div>
     </body>
     <script type="text/javascript" src="frontend/index.js"></script>
 

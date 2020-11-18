@@ -2,6 +2,66 @@ html{
     text-align: center;
     overflow: scroll;
 }
+#close{
+    width: 5%;
+    margin-top: 2%;
+    float: right;
+    margin-right: 2%;
+    outline: none;
+}
+#submit{
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    width: 20%;
+    height: 15%;
+    background: #b9eae6;
+    box-shadow: none;
+    border: none;
+    border: solid 3px;
+    border-radius: 0.9rem;
+    outline: none;
+}
+#alert>h1{
+    font-weight: 400;
+    margin-top: 5px;
+    font-size: 150%;
+}
+#alert>.input_container,.selection_container{
+    width: 60%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    background: none;
+    margin-left: 1%;
+    text-size-adjust: auto;
+    border: solid transparent;
+}
+#alert_h2 {
+    display: none;
+    width: 95%;
+    margin: 0;
+    line-height: 6vw;
+    overflow-y: scroll;
+    font-size: 3vw;
+    height: 60%;
+    font-weight: 100;
+    color: white;
+}
+#alert {
+    position: fixed;
+    background-color: #000000db;
+    width: 80%;
+    height: 60%;
+    top: 10%;
+    left: 10%;
+    z-index: 99;
+    text-align: left;
+    padding-left: 3%;
+    color: white;
+    border-radius: 1.5rem;
+}
 #h1{
     width: 100%;
     height: auto;
