@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>图书馆管理系统</title>
+    <link rel="stylesheet" href="/frontend/index.css" type="text/css">
+</head>
+
+<body id="Body">
+    <div class="page" id="index">
+        <h1>华工网上图书馆</h1>
+        <div class="input_container">
+            <input type="text" id="book_name">
+        </div>
+        <div class="selection_container">
+            <select id="book_writer">
+                <option>请选择作者</option>
+            </select>
+        </div>
+        <div class="selection_container">
+            <select id="book_type">
+                <option>请选择类型</option>
+            </select>
+        </div>
+        <input type="button" id="search">
+    </div>
+    <div class="show"></div>
+    <div class="show" id="show_search">
+    </div>
+</body>
+<script type="text/javascript" src="/frontend/index.js"></script>
+</html>
