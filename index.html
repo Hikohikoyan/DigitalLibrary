@@ -1,33 +1,75 @@
 <!DOCTYPE>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <title>图书馆管理系统</title>
-    <link rel="stylesheet" href="/frontend/index.css" type="text/css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>图书馆管理系统</title>
+        <link rel="stylesheet" href="frontend/index.css" type="text/css">
+    </head>
 
-<body id="Body">
-    <div class="page" id="index">
-        <h1>华工网上图书馆</h1>
-        <div class="input_container">
-            <input type="text" id="book_name">
+    <body id="Body">
+        <div class="page" id="index">
+            <image id="h1" src="img/title.png" />
+            <!--搜索框-->
+            <div id="search_bar">
+                <image id="bar_back" src="img/search_bar.png">
+                    <div class="input_container" id="name_input">
+                        <label class="input" for="book_name">书名</label>
+                        <input class="text_input" type="text" id="book_name">
+                    </div>
+                    <div class="selection_container">
+                        <label class="input" for="book_writer">作者</label>
+                        <select class="selection" id="book_writer">
+                            <option class="option">请选择作者</option>
+                            <option class="option">请选择作者</option>
+                        </select>
+                    </div>
+                    <div class="selection_container">
+                        <label class="input" for="book_type">类型</label>
+                        <select class="selection" id="book_type">
+                            <option class="option">请选择类型</option>
+                        </select>
+                    </div>
+                    <div class="selection_container">
+                        <label class="input" for="book_type">类型</label>
+                        <select class="selection" id="book_type">
+                            <option class="option">请选择类型</option>
+                        </select>
+                    </div>
+            </div>
+            <input type="image" src="img/search.png" id="search">
+
+            <!--查询结果-->
         </div>
-        <div class="selection_container">
-            <select id="book_writer">
-                <option>请选择作者</option>
-            </select>
+        <div class="sidebar" id="sidebar">
+        <image src="img/user.png" id="user">
+        <image src="img/home.png" id="home">
         </div>
-        <div class="selection_container">
-            <select id="book_type">
-                <option>请选择类型</option>
-            </select>
+        <image src="img/h2_search.png" id="h2_search" />
+        <div class="show" id="show_search">
+            <div class="search_result">
+                <li class="name">《这是一本书》</li>
+                <image class="book_conver" src="img/book.png">
+                    <li class="info">这是这本书的作者</li>
+            </div>
+            <div class="search_result">
+                <li class="name">《这是一本书》</li>
+                <image class="book_conver" src="img/book.png">
+                    <li class="info">这是这本书的作者</li>
+            </div>
+            <div class="search_result">
+                <li class="name">《这是一本书》</li>
+                <image class="book_conver" src="img/book.png">
+                    <li class="info">这是这本书的作者</li>
+            </div>
+            <div class="search_result">
+                <li class="name">《这是一本书》</li>
+                <image class="book_conver" src="img/book.png">
+                    <li class="info">这是这本书的作者</li>
+            </div>
         </div>
-        <input type="button" id="search">
-    </div>
-    <div class="show"></div>
-    <div class="show" id="show_search">
-    </div>
-</body>
-<script type="text/javascript" src="/frontend/index.js"></script>
+        <div class="show"></div>
+    </body>
+    <script type="text/javascript" src="frontend/index.js"></script>
+
 </html>
