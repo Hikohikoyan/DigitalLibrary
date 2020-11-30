@@ -3,11 +3,23 @@
 
     <head>
         <meta charset="utf-8">
-        <title>图书馆管理系统</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>中国传统家具人机工程学在线展示系统</title>
         <link rel="stylesheet" href="frontend/index.css" type="text/css">
     </head>
 
     <body id="Body">
+        <div id="first">
+            <h3>中国传统家具人机工程学概说</h3>
+
+            <div id="search_bar0">
+                <!--image id="bar_back" src="img/search.png"-->
+                <div class="input_container" id="name_input">
+                    <input class="text_input" type="text" id="fisrt_search" style="width:unset">
+                </div>
+                <input type="image" src="img/search_btn.png" id="search0">
+            </div>
+        </div>
         <div id="alert">
             <input type="image" id="close" src="img/close.png" />
             <h1>界面名称</h1>
@@ -17,72 +29,52 @@
                 <input class="alert_input" type="text" id="alert_input1">
                 <p class="input_attention"></p>
             </div>
-            <input type="button" id="submit"/> 
+            <input type="image" id="submit" src="img/submit.png" />
         </div>
         <div class="page" id="index">
-            <image id="h1" src="img/title.png" />
-            <!--搜索框-->
-            <div id="search_bar">
-                <image id="bar_back" src="img/search_bar.png">
+            <image id="h1" src="img/title.png">
+                <!--搜索框-->
+                <div id="search_bar">
+                    <!--image id="bar_back" src="img/search.png"-->
                     <div class="input_container" id="name_input">
-                        <label class="input" for="book_name">书名</label>
-                        <input class="text_input" type="text" id="book_name">
+                        <label class="input" for="furni_name">品名</label>
+                        <input class="text_input" type="text" id="furni_name">
                     </div>
                     <div class="selection_container">
-                        <label class="input" for="book_writer">作者</label>
-                        <select class="selection" id="book_writer">
-                            <option class="option">请选择作者</option>
-                            <option class="option">请选择作者</option>
+                        <label class="input" for="furni_size">尺寸</label>
+                        <select class="selection" id="furni_size">
+                            <option class="option">选择近似尺寸</option>
+                            <option class="option">[单位:米] 1.7*2.0*1.2</option>
                         </select>
                     </div>
                     <div class="selection_container">
-                        <label class="input" for="book_type">类型</label>
-                        <select class="selection" id="book_type">
+                        <label class="input" for="furni_type">类型</label>
+                        <select class="selection" id="furni_type">
                             <option class="option">请选择类型</option>
                         </select>
                     </div>
-                    <div class="selection_container">
-                        <label class="input" for="book_type">类型</label>
-                        <select class="selection" id="book_type">
-                            <option class="option">请选择类型</option>
-                        </select>
-                    </div>
-            </div>
-            <input type="image" src="img/search.png" id="search">
+                </div>
+                <input type="image" src="img/search_btn.png" id="search">
 
-            <!--查询结果-->
+                <!--查询结果-->
         </div>
         <div class="sidebar" id="sidebar">
             <image src="img/user.png" id="user">
                 <image src="img/home.png" id="home">
         </div>
-        <image src="img/h2_search.png" id="h2_search" />
+        <image src="img/search.png" id="h2_search" />
         <div class="show" id="show_search">
             <div class="search_result">
-                <li class="name">《这是一本书》</li>
-                <image class="book_conver" src="img/book.png">
-                    <li class="info">这是这本书的作者</li>
-            </div>
-            <div class="search_result">
-                <li class="name">《这是一本书》</li>
-                <image class="book_conver" src="img/book.png">
-                    <li class="info">这是这本书的作者</li>
-            </div>
-            <div class="search_result">
-                <li class="name">《这是一本书》</li>
-                <image class="book_conver" src="img/book.png">
-                    <li class="info">这是这本书的作者</li>
-            </div>
-            <div class="search_result">
-                <li class="name">《这是一本书》</li>
-                <image class="book_conver" src="img/book.png">
-                    <li class="info">这是这本书的作者</li>
+                <li class="name">明代圈椅</li>
+                <image class="furni_conver" src="img/furni.png">
             </div>
         </div>
         <div class="show" id="show_user"></div>
         <div class="show" id="show_info"></div>
         <div class="show" id="show_manager"></div>
-    </body>
-    <script type="text/javascript" src="frontend/index.js"></script>
+        <img id="more" src="img/more.png" >
+        <img src="img/bottom.png"
+            style="position:fixed;bottom:0;width:100%;height:auto;left:0;background-color: #232121;" </body> <script
+            type="text/javascript" src="frontend/index.js"></script>
 
 </html>
