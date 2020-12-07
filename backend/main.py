@@ -1,12 +1,8 @@
-# This is a sample Python script.
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
 # from flask import Flask
 # app = Flask(__name__)
 # @app.route('/')
-# def index():
-#     return 'Hello World'
 # if __name__ == '__main__':
 #     app.debug = True # 设置调试模式，生产模式的时候要关掉debug
 #     app.run()
@@ -19,18 +15,17 @@ db = MySQLdb.connect(host='localhost', user='root', passwd='', db='library', por
 cur = db.cursor()
 
 try:
-    c_sql = '''create table test1(
-                    id int(3) zerofill primary key auto_increment,
-                    name varchar(15) not null
-                )engine=InnoDB,charset=utf8;
-            '''
-
+   c_sql = '''create table test1(
+                   id int(3) zerofill primary key auto_increment,
+                   name varchar(15) not null
+               )engine=InnoDB,charset=utf8;
+           '''
     i_sql = 'insert into test1(name) values("chizer");'
-    s_sql = 'select * from test1;'
+    s_sql = "select * from test1;"
 
     # 先去查询，查询不需要提交到缓存，所以报错是没有表，因为创建表的事物还没有commit
     # cur.execute(s_sql)
-    cur.execute(c_sql)  # 加入创表
+    #cur.execute(c_sql)  # 加入创表
     cur.execute(i_sql)  # 加入插入记录
     db.commit()  # 统一提交
 
