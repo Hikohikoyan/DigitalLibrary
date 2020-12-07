@@ -2,6 +2,7 @@
     {
         "ID":"T1323",
         "name":"一本书的书名不短",
+        "url":"img/furni.png",
         "ISBN":"#132908",
         "writer":"somebody",
         "type":"Travel",
@@ -9,7 +10,8 @@
     },
     {
         "ID":"T13543",
-        "name":"一本书的书名不短",
+        "name":"一本书",
+        "url":"img/furni.png",
         "ISBN":"#135428",
         "writer":"somebody",
         "type":"Travel",
