@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 db = {
-    "host" : "localhost",
+    "host" : "http://203.195.221.189",
     "user" : "root",
     "pwd" : "",
     "database" : "library"

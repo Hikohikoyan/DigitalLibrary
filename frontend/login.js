@@ -6,7 +6,8 @@ function hideAlert() {
 
 function myalert(str) {
     $("#alert_h2").text(str);
-    $("#alert_h2").slideToggle();
+    $("#alert").show();
+    $("#alert_h2").show();
 }
 //编写alert内信息
 //登录到个人中心

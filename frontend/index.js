@@ -1,7 +1,7 @@
 // $(function () {
     $("#show_search").css('display', 'none');
 // 首页进入搜索页面
-const baseurl = "http://localhost:90/";
+const baseurl = "http://http://203.195.221.189/";
 $("#first").bind('click', function (e) {
     $("#show_search").css('display', 'grid');
     showAll("#show_search");
@@ -179,8 +179,13 @@ function checkPermission(){
     }
 }
 $("#addFurni").bind('click',function(e){
-    if(checkPermission()){
-        $("#addManage").slideToggle();
+    if(sessionStorage.getItem('power')!=null){
+        if(checkPermission()){
+            $("#addManage").slideToggle();
+        }    
+    }else{
+        showAll();
+        alert("欢迎你~"+sessionStorage.getItem('user')+"点击搜索开始传统家具之旅吧~");
     }
 })
 function Aalert(type) {
